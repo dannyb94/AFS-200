@@ -4,7 +4,7 @@ import random
 # Keep the game going until the user types “exit”
 # Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
-num = random.randint(1, 9)
+num = random.randint(1, 10)
 guess = 0
 track = 0
 
@@ -17,7 +17,7 @@ while guess != num and guess != "exit":
 
     guess = int(guess)
     track +- 1
-    if guess not in range (1, 9):
+    if guess not in range (1, 10):
         print("Doh! Please input a number between 1 & 9.")
     elif guess < num:
         print("Too low bub.")
