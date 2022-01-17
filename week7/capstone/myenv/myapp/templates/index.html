@@ -15,17 +15,17 @@
                 <p>Sydney & Co.</p>
             </div>
 
-            <div id="nav" class="nav">
+            <nav id="nav" class="nav">
                 <a href="#home" target="_self" class="sections">Home</a>
                 <a href="#about" target="_self" class="sections">About</a>
                 <a href="#properties" target="_self" class="sections">Properties</a>
                 <a href="#contact" target="_self" class="sections">Contact</a>
-            </div>
+            </nav>
         </div>
     </header>
     <body>
         <div id="home"">
-            <img src="{% static './assets/home-26h.png' %}" alt="dark interior with black overlay" style="width: 100%;">
+            <img id="main-Img" src="{% static './assets/home-26h.png' %}" alt="dark interior with black overlay" style="width: 100%;">
             <h1 id="title">Sydney & Co.</h1>
             <h3 id="subhead">Interior Design</h3>
         </div>
@@ -74,6 +74,8 @@
         </footer>
 
         
-        <script type="text/javascript" src="{% static './js/scroll.js' %}"></script>
+        <script type="text/javascript" src="{% static './js/scroll.js' %}">
+            console.log("hola")
+        </script>
     </body>
 </html>
