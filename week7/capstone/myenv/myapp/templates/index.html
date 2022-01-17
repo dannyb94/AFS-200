@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AFS-200/Capstone</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static './mysite/styles.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <div id="wrapper">
+            <div id="nav-mark">
+                <p>Sydney & Co.</p>
+            </div>
+
+            <div id="nav" class="nav">
+                <a href="#home" target="_self" class="sections">Home</a>
+                <a href="#about" target="_self" class="sections">About</a>
+                <a href="#properties" target="_self" class="sections">Properties</a>
+                <a href="#contact" target="_self" class="sections">Contact</a>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div id="home"">
+            <img src="{% static './assets/home-26h.png' %}" alt="dark interior with black overlay" style="width: 100%;">
+            <h1 id="title">Sydney & Co.</h1>
+            <h3 id="subhead">Interior Design</h3>
+        </div>
+
+        <div class="vertical"></div>
+
+        <div id="align">
+            <h4 id="about">01 about</h4>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae, ipsa quis aliquam quas veritatis quaerat ducimus non molestiae esse sint blanditiis ex nisi quos velit minus dolor! Unde, earum.</p>
+
+            <div class="vertical"></div>
+
+            <h4 id="properties">02 properties</h4>
+            <div id="propCntnr">
+                <div id="prop1">
+                    <img src="{% static './assets/prop4-32x32.png' %}" alt="white and wood interior" class="image" width="470px" height="470px">
+                </div>
+                <div id="prop2">
+                    <img src="{% static './assets/prop2-32x32.png' %}" alt="2 leather chairs and plants" width="470px" height="470px"></div>
+                <div id="prop3">
+                    <img src="{% static './assets/prop1-32x32.png' %}" alt="jungle themed bedroom" width="470px" height="470px"></div>
+                <div id="prop4">
+                    <img src="{% static './assets/prop3-32x32.png' %}" alt="plant and wood wall decor" width="470px" height="470px"></div>
+            </div>
+
+            <div class="vertical"></div>
+
+            <h4 id="contact">03 contact</h4>
+            <p class="join">Join our mailing list</p>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <a href="/.html" id="sub">Subscribe Now</a>
+            </form>
+            <p class="join">info@sydco.com</p>
+            <p class="join">323.857.2344</p>
+            <p class="join">4724 Admiralty Way Marina Del Rey, CA 90292</p>
+        </div>
+
+        <footer>
+            <div>
+                <img src="{% static './assets/facebook.png' %}" alt="facebook" width="20px" height="20px">
+                <img src="{% static './assets/twitter.png' %}" alt="twitter" width="20px" height="20px">
+                <img src="{% static './assets/insta.png' %}" alt="instagram" width="20px" height="20px">
+            </div>
+            <h4>&copy; 2023 Sydney & Co.</h4>
+        </footer>
+
+        
+        <script type="text/javascript" src="{% static './js/scroll.js' %}"></script>
+    </body>
+</html>
